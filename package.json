@@ -1,11 +1,11 @@
 {
   "name": "@ue/i18n",
   "private": false,
-  "version": "0.1.2",
-  "type": "commonjs",
+  "version": "0.1.3",
+  "type": "module",
   "types": "types/index.d.ts",
   "license": "MIT",
-  "main": "src/index.cjs",
+  "main": "dist/i18n.js",
   "scripts": {
     "test": "vite",
     "build": "vite build",
@@ -34,7 +34,7 @@
     "vite": "^4.1.4"
   },
   "files": [
-    "src/",
+    "dist/",
     "types/",
     "LICENSE",
     "README.md",
