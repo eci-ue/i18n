@@ -1,6 +1,6 @@
 import { LanguageType } from "../type";
-import CN from "./cn/index";
-import EN from "./en/index";
+import * as CN from "./cn/index";
+import * as EN from "./en/index";
 
 export type Language = typeof CN;
 

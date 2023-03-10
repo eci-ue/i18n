@@ -1,3 +1,5 @@
 export default {
-  money: "{number}元"
+  label: {
+    
+  }
 };

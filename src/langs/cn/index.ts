@@ -1,3 +1,3 @@
-import common from "./common";
-import message from "./message";
-export default { common, message };
+export { default as common } from "./common";
+export { default as message } from "./message";
+export { default as project } from "./project";

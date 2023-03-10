@@ -1,7 +1,7 @@
 {
   "name": "@ue/i18n",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "commonjs",
   "types": "types/index.d.ts",
   "license": "MIT",
