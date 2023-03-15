@@ -6,7 +6,7 @@ export default {
   SURE_TO_DELETE: 'Sure to delete?',
   Successfully: "{type} Successfully!",
   Failed: "{type} failed, please contact administrator or try again later.",
-  CREATED_SUCCESSFULLY: `template(message.Successfully, { type: "Created" })`,
+  CREATED_SUCCESSFULLY: `template(message.Successfully, { type: "Created",a: "1", b: "2",c: 3 })`,
   SAVED_SUCCESSFULLY: `template(message.Successfully, { type: "Saved" })`,
   ADDED_SUCCESSFULLY: `template(message.Successfully, { type: "Added" })`,
   SHARE_SUCCESSFULLY: `template(message.Successfully, { type: "Share" })`,
