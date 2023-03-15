@@ -178,7 +178,7 @@ const I18nProxy: any = function(i18n: I18nTemplate) {
 
 
 
-export const I18n = function<T>(language?: string | LanguageType): T & Language {
+export const I18n = function<T = Language>(language?: string | LanguageType): T {
   if (!language) {
     const [, type = ""] = document.cookie.match(/i18n-Language=(\S+)/) || [];
     if (type) {
@@ -194,5 +194,5 @@ export const I18n = function<T>(language?: string | LanguageType): T & Language 
     i18n.setLanguage(LanguageType.auto);
   }
   const value = I18nProxy(i18n);
-  return value;
+  return value as T;
 }
