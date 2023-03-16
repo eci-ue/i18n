@@ -1,14 +1,21 @@
-import { LanguageType } from "./type";
+import { LanguageType } from "../type";
 
 const name = "i18n-Language";
 
+let cache: string;
+let language: LanguageType = LanguageType.auto;
+
 export const get = function(): LanguageType {
-  const reg = new RegExp(`${name}=(\\S+)`, "i");
-  const [, type = ""] = document.cookie.match(reg) || [];
-  if (type) {
-    return type as LanguageType;
+  const value = document.cookie;
+  if (cache && cache !== value) {
+    cache = value;
+    const reg = new RegExp(`${name}=(\\S+)`, "i");
+    const [, type = ""] = value.match(reg) || [];
+    if (type) {
+      language = type as LanguageType;
+    }
   }
-  return LanguageType.auto;
+  return language;
 }
 
 export const set = function(value: string | LanguageType): void {
