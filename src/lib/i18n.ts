@@ -12,7 +12,7 @@ import safeSet from "@fengqiaogang/safe-set";
 
 export default class I18n {
   public values: object = {};
-  constructor(language?: LanguageType) {
+  constructor(language?: string | LanguageType) {
     this.setLanguage(language);
     const app = (data: object, path: string[] = []) => {
       for (const key of Object.keys(data)) {
