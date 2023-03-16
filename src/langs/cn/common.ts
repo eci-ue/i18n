@@ -14,7 +14,8 @@ export default {
     uploadPerson: "上传人员",
     reason: "原因",
     rejectReason: "拒绝原因",
-    comment: "评论"
+    comment: "评论",
+    languagePairs: "语言对",
   },
   title: {
     update: {

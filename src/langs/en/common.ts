@@ -14,7 +14,8 @@ export default {
     uploadPerson: "Upload Person",
     reason: "Reason",
     rejectReason: "Reject Reason",
-    comment: "Comments"
+    comment: "Comments",
+    languagePairs: "Language Pairs",
   },
   title: {
     update: {
