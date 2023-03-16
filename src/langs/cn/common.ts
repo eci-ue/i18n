@@ -8,6 +8,8 @@ export default {
     fileUpload: "文件上传",
     fileType: "文件类型",
     fileDetail: "文件信息",
+    export: "文件导出",
+    exportRecord: "导出记录",
     uploadTime: "上传时间",
     uploadPerson: "上传人员",
     reason: "原因",
