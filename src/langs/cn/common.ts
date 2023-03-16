@@ -1,6 +1,7 @@
 export default {
   label: {
     size: "大小",
+    date: "日期",
     status: "状态",
     amount: "金额",
     amountDetail: "金额明细",

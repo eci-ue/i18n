@@ -1,6 +1,7 @@
 export default {
   label: {
     size: "Size",
+    date: "Date",
     status: "Status",
     amount: "Amount",
     amountDetail: "Amount Detail",
