@@ -5,6 +5,7 @@ export default {
     amount: "Amount",
     amountDetail: "Amount Detail",
     file: "File | Files",
+    fileUpload: "Upload File",
     fileType: "File Type",
     fileDetail: "File Information",
     export: "Export File",
@@ -13,18 +14,27 @@ export default {
     uploadPerson: "Upload Person",
     reason: "Reason",
     rejectReason: "Reject Reason",
+    comment: "Comments"
+  },
+  title: {
+    update: {
+      process: "Upload Process"
+    }
   },
   placeholder: {
     select: "Please select {label}",
     input: "Please input {label}",
   },
   button: {
+    save: "Save",
     reset: "Reset",
     search: "Search",
     cancel: "Cancel",
     submit: "Submit",
     confirm: "Confirm",
     reject: "Reject",
-    download: "Dwonload"
+    download: "Dwonload",
+    interrupt: "Interrupt",
+    upload: "Upload",
   }
 };

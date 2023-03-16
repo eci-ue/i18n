@@ -2,7 +2,7 @@ import { LanguageType } from "../type";
 import * as CN from "./cn/index";
 import * as EN from "./en/index";
 
-export type Language = typeof CN;
+export type Language = typeof EN;
 
 const value = {
   [LanguageType.cn]: CN,

@@ -1,3 +1,4 @@
+import * as cookie from "./cookie";
 import { template } from "./template";
 import { LanguageType } from "./type";
 import safeGet from "@fengqiaogang/safe-get";
@@ -31,10 +32,7 @@ class I18nTemplate {
   setLanguage (language: string | LanguageType) {
     if (this.hasLanguage(language)) {
       this.language = language as LanguageType;
-      const name = "i18n-Language";
-      const expires = new Date(Date.now() + 365 * 864e5);
-      const value = `${encodeURIComponent(name)}=${encodeURIComponent(language)}; path=/; expires=${expires.toUTCString()};`;
-      document.cookie = value;
+      cookie.set(language);
       return true;
     }
     return false;
@@ -180,12 +178,7 @@ const I18nProxy: any = function(i18n: I18nTemplate) {
 
 export const I18n = function<T = Language>(language?: string | LanguageType): T {
   if (!language) {
-    const [, type = ""] = document.cookie.match(/i18n-Language=(\S+)/) || [];
-    if (type) {
-      language = type;
-    } else {
-      language = LanguageType.auto;
-    }
+    language = cookie.get();
   }
   const i18n = new I18nTemplate();
   if (i18n.hasLanguage(language)) {
