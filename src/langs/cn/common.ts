@@ -25,6 +25,7 @@ export default {
   placeholder: {
     select: "请选择{label}",
     input: "请输入{label}",
+    upload: "请上传{label}"
   },
   button: {
     save: "保存",

@@ -25,6 +25,7 @@ export default {
   placeholder: {
     select: "Please select {label}",
     input: "Please input {label}",
+    upload: "Please Upload {label}"
   },
   button: {
     save: "Save",
