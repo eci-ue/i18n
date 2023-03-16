@@ -1,14 +1,17 @@
 export default {
   lqr: {
     check: {
-      tips: "You have not yet claimed the task, please collect the task before viewing the LQR."
+      tips: "You have not yet claimed the task, please collect the task before viewing the LQR.",
+      file: "You have not yet claimed the task, please collect the task before viewing the File.",
     },
   },
   file: {
     download: {
       target: "You have not yet claimed the task, please collect the task before viewing the target files.",
       xliff: "You have not yet claimed the task, please collect the task before viewing the XLIFF files.",
-    }
+    },
+    source: "Source File",
+    delivery: "Delivery File",
   },
   status: {
     pending: "Pending",
@@ -18,5 +21,16 @@ export default {
     submittedInterrupt: "SubmittedInterrupt", // 任务中断后，资源提交，待PM审核
     confirmed: "Confirmed",   // 资源完成任务后提交，PM确认
     confirmedInterrupt: "ConfirmedInterrupt", // 任务中断后，资源提交，PM确认
-  }
+  },
+  detail: {
+    mtFactor: "MT Factor",
+    type: "Service Type",
+    workLoad: "Workload",
+    unitPrice: "Unit Price",
+    discount: "Discount",
+    subtotal: "Subtotal"
+  },
+  label: {
+    cat: "CAT tools"
+  },
 };

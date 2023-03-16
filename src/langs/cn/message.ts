@@ -22,8 +22,6 @@ export default {
   DELETE_Failed: `template(message.Failed, { type: "删除" })`,
   Move_Failed: `template(message.Failed, { type: "移动" })`,
   Rename_Failed: `template(message.Failed, { type: "更名" })`,
-  SelectForLabel: "请选择 {label}",
-  InputForLabel: "请输入 {label}",
 };
 
 

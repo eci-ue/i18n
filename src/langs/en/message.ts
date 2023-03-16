@@ -22,8 +22,6 @@ export default {
   DELETE_Failed: `template(message.Failed, { type: "Delete" })`,
   Move_Failed: `template(message.Failed, { type: "Move" })`,
   Rename_Failed: `template(message.Failed, { type: "Rename" })`,
-  SelectForLabel: "Please select {label}",
-  InputForLabel: "Please input {label}",
 };
 
 
