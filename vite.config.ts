@@ -9,7 +9,7 @@ import { defineConfig } from "vite";
 export default defineConfig(async function() {
   return {
     resolve: {
-      extensions: [".ts"],
+      extensions: [".ts", ".js"],
       alias: {
         "src/": path.resolve(__dirname, "src") + "/",
       },
@@ -26,7 +26,7 @@ export default defineConfig(async function() {
       lib: {
         entry: "src/index",
         name: "i18n",
-        formats: ["es"],
+        formats: ["es", "umd"],
         fileName: "i18n"
       },
       cssCodeSplit: true,
@@ -41,9 +41,5 @@ export default defineConfig(async function() {
         }
       }
     },
-    server: {
-    },
-    preview: {
-    }
   };
 });

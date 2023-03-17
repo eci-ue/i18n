@@ -1,11 +1,16 @@
 {
   "name": "@ue/i18n",
   "private": false,
-  "version": "0.1.6",
+  "version": "0.1.61",
   "type": "module",
   "types": "types/index.d.ts",
   "license": "MIT",
-  "main": "dist/i18n.mjs",
+  "main": "./dist/i18n.js",
+  "module": "./dist/i18n.js",
+  "exports": {
+    "import": "./dist/i18n.js",
+    "umd": "./dist/i18n.umd.cjs"
+  },
   "scripts": {
     "test": "vite",
     "build": "vite build",
