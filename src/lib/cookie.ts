@@ -12,7 +12,9 @@ export const get = function(): string {
     const reg = new RegExp(`${name}=(\\S+)`, "i");
     const [, type = ""] = value.match(reg) || [];
     if (type) {
-      switch(type.trim().toLocaleLowerCase()) {
+      const v = type.trimEnd().replace(/\;?$/i, "");
+      const t = v.trim().toLocaleLowerCase();
+      switch(t) {
         case LanguageType.cn:
           language = LanguageType.cn;
           break;
