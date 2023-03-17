@@ -7,6 +7,7 @@ export default {
   SURE_TO_DELETE: '确认删除吗?',
   Successfully: "{type}成功！",
   Failed: "{type}失败，请与管理员联系或稍后重试！",
+  
   CREATED_SUCCESSFULLY: "创建成功！",
   SAVED_SUCCESSFULLY: "保存成功！",
   SUBMIT_SUCCESSFULLY: "Submit Successfully!",

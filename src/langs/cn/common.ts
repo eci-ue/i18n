@@ -29,6 +29,7 @@ export default {
     upload: "请上传{label}"
   },
   button: {
+    delete: "删除",
     save: "保存",
     reset: "重置",
     search: "搜索",

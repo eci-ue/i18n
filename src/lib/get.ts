@@ -76,7 +76,8 @@ const i18nGet = function(i18n: I18n) {
         if (safeGet(target, prop)) {
           return safeGet(target, prop);
         }
-        value = safeGet(i18n.values, [target.getLanguage(), prop]);
+        const lang = i18n.getLanguage();
+        value = safeGet(i18n.values, [lang, prop]);
       } else {
         value = safeGet(target, prop);
       }

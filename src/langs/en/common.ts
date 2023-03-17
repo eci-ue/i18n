@@ -29,6 +29,7 @@ export default {
     upload: "Please Upload {label}"
   },
   button: {
+    delete: "Delete",
     save: "Save",
     reset: "Reset",
     search: "Search",
