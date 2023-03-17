@@ -7,7 +7,7 @@ let language: LanguageType = LanguageType.auto;
 
 export const get = function(): LanguageType {
   const value = document.cookie;
-  if (cache && cache !== value) {
+  if (!cache || cache !== value) {
     cache = value;
     const reg = new RegExp(`${name}=(\\S+)`, "i");
     const [, type = ""] = value.match(reg) || [];
@@ -18,7 +18,7 @@ export const get = function(): LanguageType {
   return language;
 }
 
-export const set = function(value: string | LanguageType): void {
+export const set = function(value?: string | LanguageType): void {
   if (value) {
     if (get() === String(value)) {
       return;
