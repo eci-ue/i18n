@@ -1,4 +1,4 @@
-import { LanguageType } from "../type";
+import LanguageType from "../type.json";
 import * as CN from "./cn/index";
 import * as EN from "./en/index";
 

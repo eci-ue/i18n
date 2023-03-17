@@ -6,13 +6,12 @@
 import * as cookie from "./cookie";
 import Langs from "../langs/index";
 import { template } from "./template";
-import { LanguageType } from "../type";
 import safeGet from "@fengqiaogang/safe-get";
 import safeSet from "@fengqiaogang/safe-set";
 
 export default class I18n {
   public values: object = {};
-  constructor(language?: string | LanguageType) {
+  constructor(language?: string) {
     this.setLanguage(language);
     const app = (data: object, path: string[] = []) => {
       for (const key of Object.keys(data)) {
@@ -26,16 +25,16 @@ export default class I18n {
     }
     app(Langs);
   }
-  hasLanguage(language?: string | LanguageType) {
+  hasLanguage(language?: string) {
     if (language && safeGet(this.values, language)) {
       return true;
     }
     return false;
   }
-  getLanguage (): LanguageType {
+  getLanguage () {
     return cookie.get();
   }
-  setLanguage (language?: string | LanguageType) {
+  setLanguage (language?: string) {
     if (language && this.hasLanguage(language)) {
       cookie.set(language);
       return true;

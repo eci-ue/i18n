@@ -2,13 +2,12 @@
   "compilerOptions": {
     "allowJs": true,
     "baseUrl": ".",
-    "target": "esnext",
-    "isolatedModules": true,
+    "target": "ESNext",
+    "isolatedModules": false,
     "useDefineForClassFields": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "node",
     "strict": true,
-    "jsx": "preserve",
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -37,7 +36,7 @@
     }
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts", "src/type.json"  
   ],
   "exclude": [
     "node_modules", "dist"

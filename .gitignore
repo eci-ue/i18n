@@ -16,6 +16,8 @@ types
 !types/shims-vue.d.ts
 *.local
 
+lang*.xlsx
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

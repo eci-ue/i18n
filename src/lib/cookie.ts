@@ -1,11 +1,11 @@
-import { LanguageType } from "../type";
+import LanguageType from "../type.json";
 
 const name = "i18n-Language";
 
 let cache: string;
-let language: LanguageType = LanguageType.auto;
+let language: string = LanguageType.auto;
 
-export const get = function(): LanguageType {
+export const get = function(): string {
   const value = document.cookie;
   if (!cache || cache !== value) {
     cache = value;
@@ -28,7 +28,7 @@ export const get = function(): LanguageType {
   return language;
 }
 
-export const set = function(value?: string | LanguageType): void {
+export const set = function(value?: string): void {
   if (value) {
     if (String(get()) === String(value)) {
       return;

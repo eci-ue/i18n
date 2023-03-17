@@ -34,6 +34,7 @@ export default defineConfig(async function() {
       manifest: false,
       rollupOptions: {
         external: [
+          /@fengqiaogang/i,
         ],
         output: {
           inlineDynamicImports: true

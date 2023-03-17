@@ -5,9 +5,9 @@
 .npmrc
 .npmignore
 test
-src
 node_modules
 pnpm-lock.yaml
 yarn.lock
 npm-shrinkwrap.json
 index.html
+*.xlsx
