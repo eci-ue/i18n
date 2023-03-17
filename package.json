@@ -10,7 +10,7 @@
     "test": "vite",
     "build": "vite build",
     "postbuild": "npm run types",
-    "types": "tsc --declaration --noEmit false --emitDeclarationOnly --declarationDir ./types ./src/index",
+    "types": "tsc --declaration --noEmit false --emitDeclarationOnly --resolveJsonModule true --esModuleInterop --declarationDir ./types ./src/index",
     "export": "node test/message.js"
   },
   "keywords": [],

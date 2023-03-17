@@ -12,8 +12,8 @@ node_modules
 yarn.lock
 dist
 dist-ssr
-types
-!types/shims-vue.d.ts
+types/*
+!types/*.json
 *.local
 
 lang*.xlsx
