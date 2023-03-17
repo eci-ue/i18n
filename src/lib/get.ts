@@ -77,9 +77,19 @@ const i18nGet = function(i18n: I18n) {
           return safeGet(target, prop);
         }
         const lang = i18n.getLanguage();
-        value = safeGet(i18n.values, [lang, prop]);
+        const data = safeGet(i18n.values, lang);
+        value = safeGet(data, prop);
       } else {
         value = safeGet(target, prop);
+      }
+      if (value == null) {
+        return value;
+      }
+      if (typeof value === "number") {
+        return value;
+      }
+      if (typeof value === "string" && value.length === 0) {
+        return value;
       }
       if (value && typeof value === "string") {
         value = value.trim();

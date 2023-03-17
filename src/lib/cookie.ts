@@ -12,7 +12,17 @@ export const get = function(): LanguageType {
     const reg = new RegExp(`${name}=(\\S+)`, "i");
     const [, type = ""] = value.match(reg) || [];
     if (type) {
-      language = type as LanguageType;
+      switch(type.trim().toLocaleLowerCase()) {
+        case LanguageType.cn:
+          language = LanguageType.cn;
+          break;
+        case LanguageType.en:
+          language = LanguageType.en;
+          break;
+        default:
+          language = LanguageType.auto;
+          break;
+      }
     }
   }
   return language;
@@ -20,7 +30,7 @@ export const get = function(): LanguageType {
 
 export const set = function(value?: string | LanguageType): void {
   if (value) {
-    if (get() === String(value)) {
+    if (String(get()) === String(value)) {
       return;
     }
     const expires = new Date(Date.now() + 365 * 864e5);
