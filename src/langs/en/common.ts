@@ -26,7 +26,7 @@ export default {
   placeholder: {
     select: "Please select {label}",
     input: "Please input {label}",
-    upload: "Please Upload {label}"
+    upload: "Please upload {label}"
   },
   button: {
     delete: "Delete",
@@ -37,7 +37,7 @@ export default {
     submit: "Submit",
     confirm: "Confirm",
     reject: "Reject",
-    download: "Dwonload",
+    download: "Download",
     interrupt: "Interrupt",
     upload: "Upload",
   }

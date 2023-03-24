@@ -25,9 +25,9 @@ export default {
     confirmedInterrupt: "中断确认中", // 任务中断后，资源提交，PM确认
   },
   detail: {
-    mtFactor: "MT Factor",
+    mtFactor: "MT 系数",
     type: "类型",
-    workLoad: "Workload",
+    workLoad: "工作量",
     unitPrice: "价格",
     discount: "折扣",
     subtotal: "小计"

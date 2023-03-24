@@ -1,9 +1,8 @@
-
 export default {
-  LOADING_ING: "loading ...",
-  DOWNLOAD_ING: "Download ...",
-  NETWORK_ERROR: "Network error!",
-  SYSTEM_ERROR: "System Exception!",
+  LOADING_ING: "Loading ...",
+  DOWNLOAD_ING: "Downloading ...",
+  NETWORK_ERROR: "Network error, please try again later!",
+  SYSTEM_ERROR: "System exception, please contact the administrator or try again later.",
   SURE_TO_DELETE: 'Sure to delete?',
   Successfully: "{type} Successfully!",
   Failed: "{type} failed, please contact administrator or try again later.",
