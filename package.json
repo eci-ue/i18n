@@ -1,7 +1,7 @@
 {
   "name": "@ue/i18n",
   "private": false,
-  "version": "0.1.63",
+  "version": "0.1.64",
   "type": "module",
   "types": "types/index.d.ts",
   "license": "MIT",
@@ -30,10 +30,10 @@
     "url": "git+https://github.com/eci-ue/i18n.git"
   },
   "devDependencies": {
+    "@types/node": "^18.15.3",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
     "typescript": "^4.9.5",
-    "@types/node": "^18.15.3",
     "vite": "^4.1.4"
   },
   "files": [
@@ -47,8 +47,8 @@
     "package.json"
   ],
   "dependencies": {
-    "node-xlsx": "^0.21.0",
     "@fengqiaogang/safe-get": "^0.1.4",
-    "@fengqiaogang/safe-set": "^0.1.3"
+    "@fengqiaogang/safe-set": "^0.1.3",
+    "node-xlsx": "^0.21.0"
   }
 }
