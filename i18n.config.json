@@ -1,0 +1,8 @@
+{
+  "langs": "src/langs",
+  "language": {
+    "auto": "en",
+    "cn": "cn",
+    "en": "en"
+  }
+}
