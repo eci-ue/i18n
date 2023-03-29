@@ -1,7 +1,7 @@
 {
   "name": "@ue/i18n",
   "private": false,
-  "version": "0.1.64",
+  "version": "0.1.65",
   "type": "module",
   "types": "types/index.d.ts",
   "license": "MIT",
@@ -44,7 +44,7 @@
     "@fengqiaogang/safe-set": "^0.1.3"
   },
   "devDependencies": {
-    "@js-lion/i18n-tools": "^1.0.1",
+    "@js-lion/i18n-tools": "^1.0.2",
     "@types/node": "^18.15.3",
     "ts-node": "^10.9.1",
     "tslib": "^2.5.0",
