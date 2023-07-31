@@ -21,8 +21,8 @@ export default {
     inInterrupt: "中断中",   // PM 发出中断，任务处于中断中
     submitted: "审核中",   // 资源完成任务后提交，待PM审核
     submittedInterrupt: "中断审核中", // 任务中断后，资源提交，待PM审核
-    confirmed: "确认中",   // 资源完成任务后提交，PM确认
-    confirmedInterrupt: "中断确认中", // 任务中断后，资源提交，PM确认
+    confirmed: "已确认",   // 资源完成任务后提交，PM确认
+    confirmedInterrupt: "中断已确认", // 任务中断后，资源提交，PM确认
   },
   detail: {
     mtFactor: "MT 系数",
