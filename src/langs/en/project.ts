@@ -27,7 +27,8 @@ export default {
   detail: {
     mtFactor: "MT Factor",
     type: "Service Type",
-    workLoad: "Initial Words",
+    workLoad: "Workload",
+    initialWords: "Initial Words",
     workLoadMT: "Workload (MT factor)",
     unitPrice: "Unit Price",
     discount: "Discount",

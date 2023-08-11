@@ -27,7 +27,8 @@ export default {
   detail: {
     mtFactor: "MT 系数",
     type: "类型",
-    workLoad: "区间字数",
+    workLoad: "工作量",
+    initialWords: "区间字数",
     workLoadMT: "工作量(MT 折扣)",
     unitPrice: "价格",
     discount: "折扣",
