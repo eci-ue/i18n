@@ -1,10 +1,13 @@
 export default {
   label: {
+    all: "全部",
     size: "大小",
+    time: "时间",
     date: "日期",
     status: "状态",
     amount: "金额",
     amountDetail: "金额明细",
+    amountTotal: "总金额",
     file: "文件",
     fileUpload: "文件上传",
     fileType: "文件类型",
@@ -15,8 +18,13 @@ export default {
     uploadPerson: "上传人员",
     reason: "原因",
     rejectReason: "拒绝原因",
+    closeReason: "关闭原因",
     comment: "备注",
     languagePairs: "语言对",
+    sourceLanguage: "源语言",
+    targetLanguage: "目标语言",
+    createTime: "创建时间",
+    createPerson: "创建人",
   },
   title: {
     update: {
@@ -40,5 +48,9 @@ export default {
     download: "下载",
     interrupt: "中断",
     upload: "上传",
+    edit: "编辑",
+    close: "关闭",
+    copy: "复制",
+    create: "创建",
   }
 };

@@ -4,6 +4,7 @@ export default {
   NETWORK_ERROR: "网络异常, 请稍后再试！",
   SYSTEM_ERROR: "系统异常，请与管理员联系或稍后重试！",
   SURE_TO_DELETE: '确认删除吗?',
+  SURE_TO_CONFIRM: "确认吗?",
   Successfully: "{type}成功！",
   Failed: "{type}失败，请与管理员联系或稍后重试！",
   

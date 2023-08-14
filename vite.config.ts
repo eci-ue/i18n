@@ -26,7 +26,7 @@ export default defineConfig(async function() {
       lib: {
         entry: "src/index",
         name: "i18n",
-        formats: ["es", "umd"],
+        formats: ["es"],
         fileName: "i18n"
       },
       cssCodeSplit: true,
@@ -34,7 +34,7 @@ export default defineConfig(async function() {
       manifest: false,
       rollupOptions: {
         external: [
-          /@fengqiaogang/i,
+          // /@fengqiaogang/i,
         ],
         output: {
           inlineDynamicImports: true

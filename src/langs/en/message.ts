@@ -4,6 +4,7 @@ export default {
   NETWORK_ERROR: "Network error. Please try again later.",
   SYSTEM_ERROR: "System exception. Please contact the administrator or try again later.",
   SURE_TO_DELETE: 'Sure to delete?',
+  SURE_TO_CONFIRM: "Sure to confirm?",
   Successfully: "{type} Success!",
   Failed: "{type} Failed, please contact administrator or try again later.",
   

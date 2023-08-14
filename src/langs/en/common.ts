@@ -1,10 +1,13 @@
 export default {
   label: {
+    all: "ALL",
     size: "Size",
+    time: "Time",
     date: "Date",
     status: "Status",
     amount: "Amount",
     amountDetail: "Amount Detail",
+    amountTotal: "Total Amount",
     file: "File | Files",
     fileUpload: "Upload File",
     fileType: "File Type",
@@ -15,8 +18,13 @@ export default {
     uploadPerson: "Upload Person",
     reason: "Reason",
     rejectReason: "Reject Reason",
+    closeReason: "Close Reason",
     comment: "Comments",
     languagePairs: "Language Pairs",
+    sourceLanguage: "Source Language",
+    targetLanguage: "Target Language",
+    createTime: "Create Time",
+    createPerson: "Create Person",
   },
   title: {
     update: {
@@ -40,5 +48,9 @@ export default {
     download: "Download",
     interrupt: "Interrupt",
     upload: "Upload",
+    edit: "Edit",
+    close: "Close",
+    copy: "Copy",
+    create: "Create",
   }
 };
