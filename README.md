@@ -60,8 +60,10 @@ const text = i18n.template("姓名: {name}, 年龄: {age}", { name: "张三", ag
 import i18n from "src/utils/i18n";
 const text = i18n.placeholder(i18n.common.placeholder.input, { label: "name" });
 // Please input name
+```
 
-// 如果需要替换的模板只有一个变量时可以使用
+如果需要替换的模板只有一个变量时可用
+```
 const text = i18n.placeholder(i18n.common.placeholder.input, "name");
 // Please input name
 ```
@@ -74,24 +76,31 @@ const text = i18n.placeholder(i18n.common.placeholder.input, "name");
 import i18n from "src/utils/i18n";
 const text = i18n.rule(i18n.common.placeholder.input, { label: "name" });
 // Please input name!
+```
 
-// 如果需要替换的模板只有一个变量时可以使用
+如果需要替换的模板只有一个变量时可用
+```
 const text = i18n.rule(i18n.common.placeholder.input, "name");
 // Please input name!
 ```
 
 ### part
-常用在需要对单位进行复数展示
+常用在需要区分单数与复数时
+<br/>
+中文情况
 ```
+import i18n from "src/utils/i18n";
 const template = "{count}个苹果";
 const text = i18n.part(template, 0, { count: 0 }); // 0个苹果
 const text = i18n.part(template, 1, { count: 1 }); // 1个苹果
 const text = i18n.part(template, 2, { count: 2 }); // 2个苹果
 const text = i18n.part(template, 3, { count: 3 }); // 3个苹果
 const text = i18n.part(template, 4, { count: 4 }); // 4个苹果
-
-
-const template = "Zero apples | 1 apple | {count} apples"; // 在英文语法上有单数和复数的区别
+```
+英文情况
+```
+import i18n from "src/utils/i18n";
+const template = "Zero apples | 1 apple | {count} apples";
 const text = i18n.part(template, 0, { count: 0 }); // Zero apples
 const text = i18n.part(template, 1, { count: 1 }); // 1 apple
 const text = i18n.part(template, 2, { count: 2 }); // 2 apples
