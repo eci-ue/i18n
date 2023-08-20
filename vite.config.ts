@@ -34,7 +34,7 @@ export default defineConfig(async function() {
       manifest: false,
       rollupOptions: {
         external: [
-          // /@fengqiaogang/i,
+          /@js-lion\/i18n/i,
         ],
         output: {
           inlineDynamicImports: true

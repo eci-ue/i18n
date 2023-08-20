@@ -1,4 +1,4 @@
-import { LanguageType } from "../../src/index";
+import { LanguageType } from "@js-lion/i18n";
 import * as CN from "./cn/index";
 import * as EN from "./en/index";
 
