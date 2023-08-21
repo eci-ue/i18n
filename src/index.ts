@@ -5,10 +5,10 @@
 
 import { I18n, LanguageType } from "@js-lion/i18n";
 import LanguageValues from "./langs/index";
-
-export type Language = typeof LanguageValues[LanguageType.en];
+import { Language } from "./langs/index";
 
 export { LanguageType };
+export type { Language };
 
 export default function<T>(language?: string) {
   const i18n = I18n<T & Language>(language);
