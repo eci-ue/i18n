@@ -23,8 +23,8 @@ export default {
     languagePairs: "Language Pairs",
     sourceLanguage: "Source Language",
     targetLanguage: "Target Language",
-    createTime: "Create Time",
-    createPerson: "Create Person",
+    createTime: "Created Time",
+    createPerson: "Created Person",
   },
   title: {
     update: {
