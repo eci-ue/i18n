@@ -9,7 +9,6 @@ lerna-debug.log*
 pnpm-lock.yaml
 npm-shrinkwrap.json
 node_modules
-yarn.lock
 dist
 dist-ssr
 types/*
